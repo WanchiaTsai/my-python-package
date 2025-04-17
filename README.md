@@ -2,15 +2,17 @@
 
 ## Table of contents
 
+- [Create and Release a Private Python Package on GitHub](#create-and-release-a-privatepython-package-on-github)
+  - [Table of contents](#table-of-contents)
 - [Introduction](#introduction)
-- [1. Setting Up Your Project Structure](#1-setting-up-your-project-structure)
-- [2. Creating the Package Code](#2-creating-the-package-code)
-- [3. Creating `setup.py`](#3-creating-setuppy)
-- [4. Creating `requirements.txt`](#4-creating-requirementstxt)
-- [5. Building and Installing Your Package](#5-building-and-installing-your-package)
-- [6. Publishing the Package on GitHub with a tag](#6-publishing-the-package-on-github-with-a-tag)
-- [7. Install the Package](#7-install-the-package)
-- [Conclusion](#conclusion)
+  - [1. Setting Up Your Project Structure](#1-setting-up-your-project-structure)
+  - [2. Creating the Package Code](#2-creating-the-package-code)
+  - [3. Creating `setup.py`](#3-creating-setuppy)
+  - [4. Creating `requirements.txt`](#4-creating-requirementstxt)
+  - [5. Building and Installing Your Package](#5-building-and-installing-your-package)
+  - [6. Publishing the Package **on GitHub with a tag**](#6-publishing-the-package-on-github-with-a-tag)
+  - [7. **Install the Package**](#7-install-the-package)
+  - [Conclusion](#conclusion)
 
 # Introduction
 
@@ -129,7 +131,7 @@ twine
 Install the requirements. To keep things simple, we will use the Python virtual environment.
 
 ```bash
-python -m venv env
+python3 -m venv env
 source env/bin/activate # for linux and mac
 ./env/Scripts/activate # for windows
 pip install -r requirements.txt
@@ -138,7 +140,7 @@ pip install -r requirements.txt
 To build our package:
 
 ```bash
-python setup.py sdist bdist_wheel
+python3 setup.py sdist bdist_wheel
 ```
 
 To install our package locally for testing:
